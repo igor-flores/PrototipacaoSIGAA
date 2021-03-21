@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>SIGAA - 404</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
+        <script src="js/bootstrap.js"></script>
+        <script src="js/functions.js"></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                              <div class="col-2 text-center">
+                                  <h1 class="bi-emoji-dizzy" style="font-size: 80px;"></span>
+                              </div>
+                              <div class="col-10">
+                                  <h1> 404 </h1>
+                                  <p> 
+                                    Poxa, parece que a página que você tentou acessar não está disponível.
+                                    <a href="home.html">Volte para a página Inicial</a>
+                                  </p>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>                
+        </div>
+        <div id="footer"></div>
+    </body>
+    <script>
+        include("header.html", "header");
+        include("footer.html", "footer");
+
+        document.getElementById("formEntrar").addEventListener("submit", (e) => {
+            let cpf = document.getElementById("cpf").value;
+            let senha = document.getElementById("senha").value;
+            if((cpf !== "123") || (senha !== "123")){
+                e.preventDefault();
+            }
+        });
+    </script>
+</html>
