@@ -12,11 +12,9 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="painelBoletim.html"><small>Boletim</small></a></li>
-                        <li><a class="dropdown-item" href="manutencao.html"><small>Atestado de Frequência</small></a></li>
-                        <li><a class="dropdown-item" href="manutencao.html"><small>Atestado de Matrícula</small></a></li>
+                        <li><a class="dropdown-item" href="#" onclick="toast('Atestado de Frequência indisponível')"><small>Atestado de Frequência</small></a></li>
+                        <li><a class="dropdown-item" href="#" onclick="toast('Atestado de Matrícula indisponível')"><small>Atestado de Matrícula</small></a></li>
                         <li><a class="dropdown-item" href="manutencao.html"><small>Consultar Histórico</small></a></li>
-                        <li><a class="dropdown-item" href="manutencao.html"><small>Consultar Disciplina</small></a></li>
-                        <li><a class="dropdown-item" href="manutencao.html"><small>Consultar Turma</small></a></li>
                     </ul>
                 </li>
 <!--                <li class="nav-item">-->
@@ -58,6 +56,9 @@
         </div>
     </div>
 </nav> <br>
+<div aria-live="polite" aria-atomic="true" class="position-relative">
+    <div class="toast-container position-absolute top-0 end-0 p-3" id="areaToast" style="z-index: 9999;"></div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="msgXuxa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -70,7 +71,7 @@
                 </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body" style="height: 10000px;">
+            <div class="modal-body" style="height: 10000px;" id="chat">
                 <div class="col-12 alert-light">
                     <small><strong>Xuxa</strong> </small> <br>
                     <small>Olá, tudo bem?</small>
@@ -86,17 +87,19 @@
             </div>
             <div class="modal-footer">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-9">
-                            <input class="form-control" placeholder="Aa">
+                    <form onsubmit="event.preventDefault; enviarMsg()">
+                        <div class="row">
+                            <div class="col-9">
+                                <input class="form-control" placeholder="Aa" id="message" autocomplete="off">
+                            </div>
+                            <div class="col-3">
+                                <button type="submit" class="btn btn-outline-primary">
+                                    <span class="bi-reply"></span>
+                                    Enviar
+                                </button>
+                            </div>
                         </div>
-                        <div class="col-3">
-                            <button class="btn btn-outline-primary">
-                                <span class="bi-reply"></span>
-                                Enviar
-                            </button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
