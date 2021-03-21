@@ -32,13 +32,16 @@
                                 <div class="accordion-body">
                                     <h2 class="text-center">Entrar</h2>
                                     <form action="home.html" id="formEntrar">
-                                        <div class="mb-3">
+                                        <div class="mb-3" id="mbcpf">
                                             <label for="cpf" class="form-label">CPF</label>
                                             <input type="text" class="form-control" id="cpf" placeholder="Insira seu cpf">
+                                            <div class="invalid-feedback"> CPF incorreto :c </div>
+                                            <div class="valid-feedback"> CPF correto :p </div>
                                         </div>
-                                        <div class="mb-3">
+                                        <div class="mb-3" id="mbsenha">
                                             <label for="senha" class="form-label">Senha</label>
                                             <input type="password" class="form-control" id="senha" placeholder="Insira sua senha">
+                                            <div class="invalid-feedback"> Senha incorreta :c </div>
                                             <a href="">
                                                 <small> Esqueci minha senha </small>
                                             </a>
@@ -72,11 +75,45 @@
         include("footer.html", "footer");
 
         document.getElementById("formEntrar").addEventListener("submit", (e) => {
-            let cpf = document.getElementById("cpf").value;
-            let senha = document.getElementById("senha").value;
-            if((cpf !== "123") || (senha !== "123")){
+            
+            let mbcpf = document.getElementById("mbcpf");
+            let cpf = document.getElementById("cpf");
+
+            let mbsenha = document.getElementById("mbsenha");
+            let senha = document.getElementById("senha");
+
+            let erro = false;
+
+            mbsenha.classList.remove("was-invalid");
+            senha.classList.remove("is-invalid");
+            if(cpf.value !== "123"){
+                mbcpf.classList.remove("was-valid");
+                cpf.classList.remove("is-valid");
+                
+                mbcpf.classList.add("was-invalid");
+                cpf.classList.add("is-invalid")
+                erro = true;
+            }else{
+                mbcpf.classList.remove("was-invalid");
+                cpf.classList.remove("is-invalid");
+                
+                cpf.classList.add("is-valid")
+                mbcpf.classList.add("was-valid");
+            }
+
+            if(!erro && senha.value !== "123"){
+                mbsenha.classList.remove("was-valid");
+                senha.classList.remove("is-valid");
+                
+                mbsenha.classList.add("was-invalid");
+                senha.classList.add("is-invalid")
+                erro = true;
+            }
+
+            if(erro){
                 e.preventDefault();
             }
+            
         });
     </script>
 </html>
