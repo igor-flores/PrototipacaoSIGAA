@@ -2,16 +2,12 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>SIGAA - Área acadêmica</title>
+        <title>SIGAA - Calendário Acadêmico</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
         <script src="js/functions.js"></script>
         <script src="js/bootstrap.js"></script>
-        <style>
-            td {
-                height: 80px;
-            }
-        </style>
+        <style> td {height: 80px;} </style>
     </head>
     <body>
         <div id="header"></div>
@@ -46,19 +42,13 @@
                                                     document.write("<td> </td>");
                                                     j++;
                                                 }
-                                                if(j == 0){
-                                                    document.write("<td class='text-danger bg-info'> " + dia + "</td>");
-                                                }else{
-                                                    document.write("<td class='bg-info'> " + dia + "</td>");
-                                                }
+
+                                                if(j == 0) document.write("<td class='text-danger bg-info'> " + dia + "</td>");
+                                                else document.write("<td class='bg-info'> " + dia + "</td>");
                                                 
                                                 dia++;
                                                 if(dia > 31){
-                                                    document.write(
-                                                        "<td> </td>" +
-                                                        "<td> </td>" +
-                                                        "<td> </td>" 
-                                                    );
+                                                    document.write("<td> </td><td> </td><td> </td>");
                                                     break;
                                                 }
                                             }
@@ -88,21 +78,12 @@
                                         for(i = 0; dia < 31; i++){
                                             document.write("<tr>");
                                             for(j = 0; j < 7; j++){
-                                                if(j == 0){
-                                                    document.write("<td class='text-danger'> " + dia + "</td>");
-                                                }else{
-                                                    document.write("<td class='bg-warning'> " + dia + "</td>");
-                                                }
-                                                
+                                                if(j == 0) document.write("<td class='text-danger'> " + dia + "</td>");
+                                                else document.write("<td class='bg-warning'> " + dia + "</td>");
+                                                                                                
                                                 dia++;
                                                 if(dia > 30){
-                                                    document.write(
-                                                        "<td> </td>" +
-                                                        "<td> </td>" +
-                                                        "<td> </td>" +
-                                                        "<td> </td>" +
-                                                        "<td> </td>" 
-                                                    );
+                                                    document.write("<td> </td><td> </td><td> </td><td> </td><td> </td>");
                                                     break;
                                                 }
                                             }

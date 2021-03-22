@@ -14,6 +14,18 @@ function enviarMsg(){
     chat.innerHTML += "<div class='col-12'><small><strong>Você</strong> </small> <br> <small>"+ message.value +"</small> </div>";
     message.value = null;
 }
+function changeStatus(){
+    let object = document.getElementById('titleChat');
+    if(object.classList.contains("text-success")){
+        object.classList.remove("text-success");
+        object.classList.add("text-danger");
+        object.setAttribute("title", "Desconectado");
+    }else{
+        object.classList.remove("text-danger");
+        object.classList.add("text-success");
+        object.setAttribute("title", "Conectado");
+    }
+}
 
 totalToast = 0;
 function toast(mensagem){
