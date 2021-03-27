@@ -2,7 +2,7 @@
 Projeto de desenvolvimento de protótipo junto à avaliação de usabilidade na cadeira de Interação Humano-Computador 2020/2 - UNIPAMPA, campus Alegrete.
 
 ## Sistema alvo
-SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas
+SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas.
 
 ## Integrantes
 * [1901560083] Igor Flores da Silva
