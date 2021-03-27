@@ -12,6 +12,7 @@ SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas
 Design baseado nas heurísticas de usabilidade de Nielsen.
 
 ## Protótipo
+Segue abaixo a caracterização e execução do projeto.
 ### Caracterização
 O protótipo produzido por este grupo é de **alto nível** e **funcional**. Produzido com HTML, CSS e JavaScript, com o auxílio do *framework* Bootstrap vs. 5.0.
 ### Execução
