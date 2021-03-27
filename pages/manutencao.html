@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>SIGAA - 404</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
-        <script src="js/bootstrap.js"></script>
-        <script src="js/functions.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap-icons/font/bootstrap-icons.css">
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/functions.js"></script>
     </head>
     <body>
         <div id="header"></div>
@@ -36,8 +36,8 @@
         <div id="footer"></div>
     </body>
     <script>
-        include("header.html", "header");
-        include("footer.html", "footer");
+        include("../includes/footer.html", "footer");
+        include("../includes/header.html", "header");
 
         document.getElementById("formEntrar").addEventListener("submit", (e) => {
             let cpf = document.getElementById("cpf").value;

@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>SIGAA - Área acadêmica</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
-        <script src="js/functions.js"></script>
-        <script src="js/bootstrap.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap-icons/font/bootstrap-icons.css">
+        <script src="../js/functions.js"></script>
+        <script src="../js/bootstrap.js"></script>
     </head>
     <body>
         <div id="header"></div>
@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-12">
                     <div class="card" >
-                        <img src="images/spongeBob.jpg" class="card-img-top" alt="...">
+                        <img src="../images/spongeBob.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Joãozinho da Silva</h5>
                         </div>
@@ -33,6 +33,13 @@
                 </div>
                 <div class="col-lg-9 col-sm-12">
                     <h3>Meus Cursos</h3>
+                    <hr> 
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="home.html">Página Inicial</a></li>
+                            <li class="breadcrumb-item" aria-current="page">Minhas Turmas</li>
+                        </ol>
+                    </nav>
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne">
@@ -91,7 +98,7 @@
         <div id="footer"></div>
     </body>
     <script>
-        include("footer.html", "footer");
-        include("header.html", "header");
+        include("../includes/footer.html", "footer");
+        include("../includes/header.html", "header");
     </script>
 </html>

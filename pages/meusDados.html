@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>SIGAA - Meus dados</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
-        <script src="js/functions.js"></script>
-        <script src="js/bootstrap.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap-icons/font/bootstrap-icons.css">
+        <script src="../js/functions.js"></script>
+        <script src="../js/bootstrap.js"></script>
     </head>
     <body>
         <div id="header"></div>
@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-12">
                     <div class="card" >
-                        <img src="images/spongeBob.jpg" class="card-img-top" alt="...">
+                        <img src="../images/spongeBob.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Joãozinho da Silva</h5>
                         </div>
@@ -22,6 +22,13 @@
                 </div>
                 <div class="col-lg-9 col-sm-12">
                     <h3>Meus dados</h3>
+                    <hr> 
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="home.html">Página Inicial</a></li>
+                            <li class="breadcrumb-item" aria-current="page">Meus Dados</li>
+                        </ol>
+                    </nav>
                     <div class="card">
                         <div class="card-header">
                           <strong>Meus dados institucionais</strong>
@@ -65,7 +72,7 @@
         <div id="footer"></div>
     </body>
     <script>
-        include("footer.html", "footer");
-        include("header.html", "header");
+        include("../includes/footer.html", "footer");
+        include("../includes/header.html", "header");
     </script>
 </html>
