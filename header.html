@@ -25,9 +25,9 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                        <a class="dropdown-item alert-primary" href="#" data-bs-toggle="modal" data-bs-target="#msgXuxa">
-                            <small><strong>Xuxa</strong> </small> <br>
-                            <small>É xu xu xu. É xa xa xa</small>
+                        <a class="dropdown-item alert-primary" href="#" data-bs-toggle="modal" data-bs-target="#msgLorena">
+                            <small><strong>Lorena</strong> </small> <br>
+                            <small>Bye!</small>
                         </a>
                     </li>
                     <li>
@@ -54,32 +54,45 @@
     </div>
 </nav> <br>
 <div aria-live="polite" aria-atomic="true" class="position-relative">
-    <div class="toast-container position-absolute top-0 end-0 p-3" id="areaToast" style="z-index: 9999;"></div>
+    <div class="toast-container position-fixed end-0 p-3" id="areaToast" style="z-index: 9999; margin-top: 20px;"></div>
 </div>
 
 <!-- Modal chat -->
-<div class="modal fade" id="msgXuxa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="msgLorena" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title text-success" id="titleChat" onclick="changeStatus();" data-bs-toggle="tooltip" data-bs-placement="right" title="Conectado">
                     <span class="bi-people"></span> &nbsp; </sup>
-                    Xuxa 
+                    Lorena 
                 </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" style="height: 10000px;" id="chat">
                 <div class="col-12 alert-light">
-                    <small><strong>Xuxa</strong> </small> <br>
-                    <small>Olá, tudo bem?</small>
+                    <small><strong>Você</strong> </small> <br>
+                    <small>Hi Lorena</small>
                 </div>
                 <div class="col-12 alert-light">
                     <small><strong>Você</strong> </small> <br>
-                    <small>Oi?</small>
+                    <small>it was good. I stayed on Saturday at home</small> <br>
+                    <small>and on Sunday at my friend, at Jenny’s house</small>
+                </div>
+                <div class="col-12 alert-light">
+                    <small><strong>Você</strong> </small> <br>
+                    <small>how nice! What did you do then?</small>
+                </div>
+                <div class="col-12 alert-light">
+                    <small><strong>Lorena</strong> </small> <br>
+                    <small>I watched a movie with her.</small>
+                </div>
+                <div class="col-12 alert-light">
+                    <small><strong>Você</strong> </small> <br>
+                    <small>oh, thanks you, bye!</small>
                 </div>
                 <div class="col-12">
-                    <small><strong>Xuxa</strong> </small> <br>
-                    <small>É xu xu xu. É xa xa xa</small>
+                    <small><strong>Lorena</strong> </small> <br>
+                    <small>Bye!</small>
                 </div>
             </div>
             <div class="modal-footer">
