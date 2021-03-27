@@ -38,3 +38,37 @@ function toast(mensagem){
     totalToast++;
     console.log(totalToast);
 }
+
+function filtro(input){
+    let tfiltro = document.getElementById('tfiltro');
+    let disciplinas = [
+        "BIOLOGIA",
+        "EDUCAÇÃO FÍSICA",
+        "EMPREENDEDORISMO",
+        "FILOSOFIA",
+        "FÍSICA",
+        "HISTÓRIA",
+        "LÍNGUA PORTUGUESA E LITERATURA BRASILEIRA",
+        "MATEMÁTICA",
+        "PROGRAMAÇÃO III",
+        "QUÍMICA",
+        "SOCIOLOGIA",
+        "TÓPICOS AVANÇADOS EM INFORMÁTICA",
+        "TRABALHO DE CONCLUSÃO DE CURSO"
+    ];
+    tfiltro.innerHTML = "";
+    if(input.value != ""){
+        let isVoid = true;
+        disciplinas.forEach((nome) => {
+            if(nome.match(new RegExp(input.value.toUpperCase(), 'g'))){
+                tfiltro.innerHTML += "<tr> <td><a href='turma.html'>3º ano - " + nome + "</a></td></tr>";
+                isVoid = false;
+            }
+        });
+        if(isVoid){
+            tfiltro.innerHTML += "<tr> <td class='text-secondary'> Poxa, nenhuma disciplina foi encontrada :/</td></tr>";
+        }
+        
+
+    }
+}
