@@ -7,6 +7,8 @@ SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas.
 ## Integrantes
 * [1901560083] Igor Flores da Silva
 * [2010100488] Júlio Silveira Ortiz Rocha
+* [2010100988] Lara Souto Moreira
+* [2010100050] William Christopher Ramos Oliveira
 
 ## Princípios de design adotado
 Design baseado nas heurísticas de usabilidade de Nielsen.
