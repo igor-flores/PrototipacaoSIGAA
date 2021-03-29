@@ -15,9 +15,13 @@ Design baseado nas heurísticas de usabilidade de Nielsen.
 
 ## Protótipo
 Segue abaixo a caracterização e execução do projeto.
+
 ### Caracterização
 Há dois protótipos produzidos por este grupo, ambos são de **alto nível**.
+
 O primeiro protótipo é **não-funcional** e foi produzido com a ferramenta *Figma*.
+
 O segundo protótipo é **funcional** e foi produzido com HTML, CSS e JavaScript, com o auxílio do *framework* Bootstrap vs 5.0.
+
 ### Execução do Protótipo Funcional
 Para executar este protótipo é muito simples: basta abrir o arquivo `prototipo/index.html`  com o navegador de sua preferência.
