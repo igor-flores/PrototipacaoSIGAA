@@ -25,10 +25,58 @@
                             <a href="minhasTurmas.html" class="text-dark">
                                 <li class="list-group-item"> <span class="bi bi-person-lines-fill"></span> Minhas turmas</li>
                             </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalComunidades" class="text-dark">
+                                <li class="list-group-item"> <span class="bi bi-people"></span> Minhas Comunidades</li>
+                            </a>
                             <a href="calendario.html" class="text-dark">
                                 <li class="list-group-item"> <span class="bi bi-calendar-range"></span> Calendário Acadêmico</li>
                             </a>
                         </ul>
+                    </div>
+                </div>
+                <!-- COMUNIDADES VIRTUAIS  -->
+                <div class="modal fade" id="modalComunidades" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" data-bs-toggle="tooltip" data-bs-placement="right">
+                                    <span class="bi-people"></span> Minhas Comunidades
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" id="chat">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Ano</th>
+                                            <th>Nome</th>
+                                            <th>Reponsável</th>
+                                        </tr>
+                                    </thead>
+                                    <tr style="cursor: pointer;">
+                                        <td>2018</td>
+                                        <td>Oportunidades da Aplicação de Design Thinking no Desenvolvimento de Software Web</td>
+                                        <td>Rafael Baldiati Parizi</td>
+                                    </tr>
+                                    <a href="">
+
+                                    <tr style="cursor: pointer;">
+                                        <td>2017</td>
+                                        <td>Iniciação a Prática das Lutas no Ensino Fundamental</td>
+                                        <td>Cleiton Silva Correa</td>
+                                    </tr>
+                                    </a>
+                                </table>
+                                <script>
+                                    document.querySelectorAll("tr").forEach((e) => {
+                                        e.addEventListener("click", (click) => {
+                                            location.href = "comunidadesVirtuais.html";
+                                        });
+                                    });
+                                </script>
+                                    
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-9 col-sm-12">
